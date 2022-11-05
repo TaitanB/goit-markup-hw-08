@@ -319,6 +319,7 @@ body {
   background-color: var(--text-color-theme-dark);
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 .mobile__close:hover, .mobile__close:focus {
   fill: var(--accent-color);
