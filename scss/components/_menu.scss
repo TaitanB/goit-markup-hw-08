@@ -1,0 +1,134 @@
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile__logo {
+  @extend .logo;
+  color: var(--logo-color);
+  margin: 16px 0;
+  font-size: 24px;
+  line-height: 1.167;
+}
+
+.mobile__menu-open {
+  padding: 0;
+  border: none;
+  background-color: var(--text-color-theme-dark);
+}
+
+.mobile__menu {
+  position: fixed;
+  background-color: var(--text-color-theme-dark);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 48px 40px;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile__top {
+  position: relative;
+}
+
+.mobile__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: var(--text-color-theme-dark);
+  padding: 0;
+  border: none;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile__list > li {
+  // display: flex;
+  position: relative;
+}
+
+.mobile__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.current-mobile {
+  color: var(--accent-color);
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
+      left: 0;
+      bottom: -5px;
+    }
+  }
+}
+
+.mobile__tell-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+
+.mobile__email-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: var(--text-color-theme-light);
+  margin-bottom: 64px;
+}
+
+.menu-soc {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding-right: 10px;
+}
+
+.menu-soc__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
