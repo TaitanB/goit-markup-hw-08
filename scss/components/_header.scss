@@ -54,16 +54,13 @@
     }
 
     @include desktop {
-      // margin: 25px 0;
       font-size: 26px;
     }
   }
 
   &__list {
-    // width: 281px;
     justify-content: space-between;
     align-items: center;
-    // margin-left: 93px;
     gap: 50px;
   }
 

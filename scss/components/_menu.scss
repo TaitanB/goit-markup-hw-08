@@ -21,6 +21,11 @@
   border: none;
   background-color: var(--text-color-theme-dark);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile__menu {
@@ -80,22 +85,15 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .current-mobile {
   color: var(--accent-color);
-  &:hover {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background: var(--accent-color);
-      border-radius: 2px;
-      left: 0;
-      bottom: -5px;
-    }
-  }
 }
 
 .mobile__tell-link {

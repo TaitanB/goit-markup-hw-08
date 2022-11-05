@@ -118,6 +118,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
+    &:focus {
+      border-color: var(--accent-color);
+    }
+
     @include tablet {
       width: 450px;
     }
@@ -143,6 +147,11 @@
     letter-spacing: 0.06em;
     color: var(--text-color-theme-dark);
     margin-top: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-active-color);
+    }
 
     @include desktop {
       margin: 0;
