@@ -278,6 +278,7 @@ body {
   padding: 0;
   border: none;
   background-color: var(--text-color-theme-dark);
+  cursor: pointer;
 }
 
 .mobile__menu {
