@@ -166,16 +166,17 @@
 .address {
   margin-top: 20px;
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-  }
+  // &__list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 9px;
+  // }
 
   &__map {
     line-height: 1.71;
     color: var(--text-color-theme-dark);
     font-style: normal;
+    margin-bottom: 9px;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -191,6 +192,7 @@
     font-style: normal;
     line-height: 1.71;
     color: var(--contacts-color);
+    margin-bottom: 9px;
 
     transition-property: color;
     transition-duration: 250ms;

@@ -15,6 +15,9 @@
 
   &__item {
     margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @include tablet {
       @include calc(2);
@@ -31,8 +34,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120px;
     margin-bottom: 30px;
-    padding: 25px 0;
+    // padding: 25px 0;
     border-radius: 4px;
     background-color: #f5f4fa;
 
@@ -51,6 +55,11 @@
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
   }
 
   &__descr {
