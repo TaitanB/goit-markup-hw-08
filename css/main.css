@@ -1386,11 +1386,11 @@ body {
   line-height: 1.875;
   color: var(--text-color-theme-light);
 }
-.portfolio .overlay {
+.overlay {
   position: relative;
   overflow: hidden;
 }
-.portfolio .overlay__text {
+.overlay__text {
   position: absolute;
   left: 0;
   top: 0;
@@ -1412,7 +1412,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__link:hover .portfolio .overlay {
+.portfolio__link:hover .overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

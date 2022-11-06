@@ -131,27 +131,27 @@
   .title-hidden {
     @extend %visually-hidden;
   }
+}
 
-  .overlay {
-    position: relative;
-    overflow: hidden;
+.overlay {
+  position: relative;
+  overflow: hidden;
 
-    &__text {
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-color: rgba(33, 150, 243, 0.9);
-      width: 100%;
-      height: 100%;
-      padding: 63px 24px;
-      font-size: 18px;
-      line-height: 1.556;
-      color: var(--text-color-theme-dark);
-      transform: translateY(101%);
-      transition-property: transform;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  &__text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.556;
+    color: var(--text-color-theme-dark);
+    transform: translateY(101%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     .portfolio__link:hover & {
       transform: translateY(0);
