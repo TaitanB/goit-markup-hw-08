@@ -82,7 +82,9 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,18 +101,8 @@
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-  }
 
-  @include tablet {
-    .portfolio__wraper--pb {
-      padding-bottom: 56px;
-    }
-  }
-
-  @include desktop {
-    .portfolio__wraper--pb {
-      padding-bottom: 20px;
-    }
+    flex-grow: 1;
   }
 
   &__title {
