@@ -1375,13 +1375,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .portfolio__set {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 30px;
   }
 }
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
