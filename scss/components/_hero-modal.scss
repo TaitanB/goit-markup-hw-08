@@ -29,7 +29,6 @@
   transform: translate(-50%, -50%);
   max-width: 96%;
   width: 450px;
-  // height: 609px;
   background-color: var(--text-color-theme-dark);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -39,7 +38,6 @@
 
   @include desktop {
     width: 528px;
-    // height: 581px;
   }
 
   &__btn {
@@ -92,6 +90,10 @@
     position: relative;
   }
 
+  &__label--bottom {
+    margin-bottom: 20px;
+  }
+
   &__input-icon {
     position: absolute;
     left: 12px;
@@ -136,26 +138,28 @@
   }
 
   &__policy {
-    display: flex;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    position: relative;
-    align-items: baseline;
+    // ----------
+    display: inline-block;
+    // ----------
+
     font-size: 12px;
     line-height: 1.167;
+    margin-bottom: 30px;
+
+    // display: flex;
+    // position: relative;
+    // align-items: baseline;
 
     @include desktop {
-      font-size: inherit;
-      line-height: inherit;
+      font-size: 14px;
+      line-height: 1.7;
     }
   }
 
   &__policy span {
-    margin-left: 22px;
-
-    @include desktop {
-      margin-left: 36px;
-    }
+    // ----------
+    margin-left: 8px;
+    // ----------
   }
 
   &__checkbox {
@@ -170,8 +174,16 @@
   }
 
   &__checbox-icon {
-    display: block;
-    position: absolute;
+    // ----------
+    vertical-align: text-bottom;
+
+    @include desktop {
+      vertical-align: text-top;
+    }
+    // ----------
+
+    // display: block;
+    // position: absolute;
 
     cursor: pointer;
     border: 2px solid var(--title-text-color);
@@ -180,12 +192,17 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include desktop {
-      left: 14px;
-    }
+    // @include desktop {
+    //   left: 14px;
+    // }
   }
 
   &__checbox-link {
+    // ----------
+    display: inline;
+    vertical-align: middle;
+    // ----------
+
     text-decoration: underline;
     margin-left: 8px;
     color: var(--accent-color);

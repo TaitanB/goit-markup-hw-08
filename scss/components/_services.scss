@@ -2,23 +2,21 @@
   padding-top: 0;
   display: none;
 
-  &__thumb {
+  &__item {
     position: relative;
-    min-height: 294px;
-    margin-bottom: 30px;
   }
 
-  &__thumb > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
+  // &__item > img {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   object-fit: cover;
+  // }
 
   &__description {
     position: absolute;
     width: 100%;
-    padding: 27px 0;
+    height: 70px;
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;

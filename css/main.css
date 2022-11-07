@@ -157,6 +157,12 @@ body {
             align-items: center;
   }
 }
+.header__link--top {
+  padding-top: 18px;
+}
+.header__link--bottom {
+  padding-bottom: 18px;
+}
 .header__link {
   font-weight: 500;
   line-height: 1.143;
@@ -178,6 +184,11 @@ body {
 .header__link:focus, .header__link:hover {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .header__link {
+    padding: 32px 0;
+  }
+}
 .header__icon {
   fill: currentColor;
   margin-right: 10px;
@@ -185,6 +196,7 @@ body {
 
 .nav__logo {
   color: var(--logo-color);
+  padding: 24px 0;
 }
 @media screen and (min-width: 768px) {
   .nav__logo {
@@ -608,6 +620,9 @@ body {
   text-align: left;
   position: relative;
 }
+.modal__label--bottom {
+  margin-bottom: 20px;
+}
 .modal__input-icon {
   position: absolute;
   left: 12px;
@@ -655,31 +670,19 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__policy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  position: relative;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: inline-block;
   font-size: 12px;
   line-height: 1.167;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .modal__policy {
-    font-size: inherit;
-    line-height: inherit;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 .modal__policy span {
-  margin-left: 22px;
-}
-@media screen and (min-width: 1200px) {
-  .modal__policy span {
-    margin-left: 36px;
-  }
+  margin-left: 8px;
 }
 .modal__checkbox {
   position: absolute;
@@ -692,8 +695,7 @@ body {
   overflow: hidden;
 }
 .modal__checbox-icon {
-  display: block;
-  position: absolute;
+  vertical-align: text-bottom;
   cursor: pointer;
   border: 2px solid var(--title-text-color);
   fill: var(--text-color-theme-dark);
@@ -703,10 +705,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal__checbox-icon {
-    left: 14px;
+    vertical-align: text-top;
   }
 }
 .modal__checbox-link {
+  display: inline;
+  vertical-align: middle;
   text-decoration: underline;
   margin-left: 8px;
   color: var(--accent-color);
@@ -821,22 +825,13 @@ body {
   padding-top: 0;
   display: none;
 }
-.services__thumb {
+.services__item {
   position: relative;
-  min-height: 294px;
-  margin-bottom: 30px;
-}
-.services__thumb > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .services__description {
   position: absolute;
   width: 100%;
-  padding: 27px 0;
+  height: 70px;
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
@@ -1118,7 +1113,15 @@ body {
 .footer__link {
   width: 100%;
   height: 100%;
-  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background-color: var(--footer-soc-background-color);
   fill: var(--text-color-theme-dark);
