@@ -10,6 +10,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -25,16 +26,6 @@ a:hover {
 ul,
 ol {
   list-style: none;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
 }
 
 :root {
@@ -69,6 +60,11 @@ body {
   color: var(--text-color-theme-light);
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+:focus,
+:active {
+  outline: 1px solid var(--accent-color);
 }
 
 .container {

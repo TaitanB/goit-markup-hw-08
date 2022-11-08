@@ -12,7 +12,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  // max-height: 100%;
+  height: auto;
 }
 
 a {
@@ -30,12 +30,12 @@ ol {
   list-style: none;
 }
 
-:focus,
-:active {
-  outline: none;
-}
+// :focus,
+// :active {
+//   outline: none;
+// }
 
-a:focus,
-a:active {
-  outline: none;
-}
+// a:focus,
+// a:active {
+//   outline: none;
+// }
