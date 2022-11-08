@@ -5,11 +5,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-:focus,
-:active {
-  outline: 1px solid var(--accent-color);
-}
-
 // переробити в міксін???
 
 // @mixin font ($fs, $lh, $fw, $ls) {

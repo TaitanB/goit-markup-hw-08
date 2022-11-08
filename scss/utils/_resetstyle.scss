@@ -30,12 +30,12 @@ ol {
   list-style: none;
 }
 
-// :focus,
-// :active {
-//   outline: none;
-// }
+:focus,
+:active {
+  outline: none;
+}
 
-// a:focus,
-// a:active {
-//   outline: none;
-// }
+a:focus,
+a:active {
+  outline: 1px solid var(--accent-color);
+}
